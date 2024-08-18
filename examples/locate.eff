@@ -1,0 +1,46 @@
+; Effectus example
+;
+; Using Locate in text mode and
+; graphics mode
+
+PROC MAIN()
+
+CHAR key
+BYTE loc
+
+GRAPHICS(0)
+
+POSITION(3,3)
+PRINT("HELLO, ATARIAN")
+
+POSITION(3,5)
+PRINT("AT RI")
+
+PRINTF("%E%EPRESS ANY KEY TO CONTINUE!")
+KEY=GETD(7)
+
+LOC=LOCATE(10,3)
+PRINTB(LOC)
+POSITION(5,5)
+PUT(LOC)
+
+key=GetD(7)
+
+GRAPHICS(7)
+
+color=1
+Plot(10,10)
+color=2
+Plot(20,20)
+color=3
+Plot(30,30)
+
+loc=Locate(20,20)
+
+color=LOC
+Plot(60,60)
+
+Print("Locate a pixel and re-plot it at the  other location")
+key=GetD(7)
+
+RETURN
