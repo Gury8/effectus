@@ -1,0 +1,16 @@
+; Effectus example
+;
+; PrintE demo
+
+PROC Main()
+
+CHAR key
+
+PrintE("HELLO WORLD")
+PrintE("NEW LINE")
+PrintE("")
+PrintE("ANOTHER NEW LINE")
+
+key = GetD(7)
+
+RETURN
