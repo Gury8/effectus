@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2020 Bostjan Gorisek
+Copyright (c) 2022 Bostjan Gorisek
 
 Effectus is freeware, you can use or change it to your needs, but please read
 the following.

@@ -1,0 +1,24 @@
+
+- Proper handling of strings and their length in BYTE ARRAY declaration
+    - String length is determined by the first element of array (0th element, f.e. str(0))
+    - InputSD and InputMD procedure proper handling of strings using new internal Mad Pascal variable eff_array_buffer
+
+- Shell
+    - Parameter list for local routines
+    - Showing Mad Pascal errors
+    - Support for Neo6502 and Commander X16 computer board system (Mad Pascal support, not tested using Effectus)
+
+- Some changes in examples repository
+
+- Minor code optimization
+
+- Effectus source code listing
+    - Updated header information
+    - Updated routine description headers
+    - Source code refactoring and cleaning
+
+- Effectus 0.5.6 was compiled with Free Pascal 3.2.2
+
+- Included cross-compilers
+    - Mad Pascal Compiler version 1.7.1 [2024/08/14] for MOS 6502 CPU
+    - Mad Assembler 2.1.7 build 33 (1 Aug 24) (2024/08/01)
