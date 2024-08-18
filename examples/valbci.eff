@@ -1,0 +1,26 @@
+; Effectus example
+;
+; String to number conversion demo
+; using ValB, ValC and ValI functions 
+
+PROC MAIN()
+
+CHAR key
+BYTE B INT I CARD C
+
+B=VALB("120")
+I=VALI("-3400")
+C=VALC("65000")
+
+PRINTE("BYTE VALUE = ")
+PRINTBE(B)
+
+PRINTE("INTEGER VALUE = ")
+PRINTCE(I)
+
+PRINTE("WORD/CARD VALUE = ")
+PRINTIE(C)
+
+key=GETD(7)
+
+RETURN

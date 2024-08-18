@@ -1,0 +1,17 @@
+; Effectus example
+;
+; String manipulation demo
+
+PROC Main()
+
+CHAR key
+BYTE ARRAY A="THIS IS A STRING CONSTANT"
+BYTE ARRAY B="N1"
+
+PRINTE(A)
+B=A
+PrintE(B)
+
+key=GETD(7)
+
+RETURN

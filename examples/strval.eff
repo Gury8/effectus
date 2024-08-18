@@ -1,0 +1,71 @@
+; Effectus example
+;
+; Number to string conversion using
+; StrB, StrI and StrC procedures
+;
+; String to number conversion by using
+; ValB, ValI and ValC functions
+
+CHAR key
+BYTE num1
+INT num2
+CARD num3
+BYTE ARRAY strnum1(6), strnum2(6)
+BYTE ARRAY strnum3(6)
+
+PROC Main()
+
+Put(125)
+PrintE("Effectus example:")
+PutE()
+PrintE("Number to string conversion using")
+PrintE("StrB, StrI and StrC procedures")
+PutE()
+
+StrC(65000,strnum1)
+StrI(3200,strnum2)
+StrB(210,strnum3)
+
+Print("strnum1 = ") PrintE(strnum1)
+Print("strnum2 = ") PrintE(strnum2)
+Print("strnum3 = ") PrintE(strnum3)
+PutE()
+
+num3 = 35000
+StrC(num3,strnum1)
+
+num2 = 3100
+StrI(num2,strnum2)
+
+num1 = 230
+StrB(num1,strnum3)
+
+Print("strnum1 = ") PrintE(strnum1)
+Print("strnum2 = ") PrintE(strnum2)
+Print("strnum3 = ") PrintE(strnum3)
+
+;printBE(strnum1(0))
+;printBE(strnum2(0))
+;printBE(strnum3(0))
+PrintF("Size of card value is %U%E", strnum1(0))
+PrintF("Size of integer value is %I%E", strnum2(0))
+PrintF("Size of byte value is %U%E", strnum3(0))
+
+PutE()
+PrintE("String to number conversion by using")
+PrintE("ValB, ValI and ValC")
+PutE()
+
+num1=ValB(strnum3)
+Print("num1=")
+PrintBE(num1)
+
+num2=ValI("1500")
+Print("num2=") PrintIE(num2)
+
+num3=ValC("44611")
+Print("num3=") PrintCE(num3)
+
+key=GETD(7)
+
+RETURN
